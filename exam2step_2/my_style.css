@@ -1,0 +1,134 @@
+* { /* RESET */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* FONT */
+/* Nunito Font */
+@font-face { /* Basic font */
+    font-family: 'Nunito';
+    src: url("../fonts/Nunito/Nunito-Regular.ttf") format('truetype');
+}
+
+@font-face { /* Bold font */
+    font-family: 'Nunito-Bold';
+    src: url("../fonts/Nunito/Nunito-Bold.ttf") format('truetype');
+}
+/* Hind Siliguri Font */
+@font-face { /* Regular font */
+    font-family: 'Hind';
+    src: url("../fonts/Hind_Siliguri/HindSiliguri-Regular.ttf") format('truetype');
+}
+
+@font-face { /* Bold font */
+    font-family: 'Hind-Bold';
+    src: url("../fonts/Hind_Siliguri/HindSiliguri-Bold.ttf") format('truetype');
+}
+
+label{
+    display: block;
+    width : 150px;
+    float: left;
+}
+
+#name ,#birthday, #phone, #password-confirm{
+    border: 2px dotted blue;
+}
+
+
+#btn-submit{
+    border-radius: 5px;
+    box-shadow: 4px 0 4px #5DFDCB;
+    padding: .5rem;
+    background-color: #5DFDCB;
+}
+
+input:hover, button:hover {
+    transform: scale(1.1);
+}
+
+.formulaire {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+input[type=text] {
+    margin: .5rem 0;
+    border-radius: 5px;
+}
+
+input[type=radio], input[type=checkbox], input[type=email], input[type=url], input[type=date], input[type=tel], input[type=password] {
+    margin: .3rem 0;
+    border-radius: 5px;
+}
+
+select {
+    width: 100%;
+}
+
+.group {
+    display: block;
+}
+.error{
+    color: red;
+}
+
+h2 {
+    margin-top: .5rem;
+}
+
+.error{
+    color: red;
+    text-align: center;
+}
+
+/* HELPER */
+
+.title {
+    font-family: Hind, sans-serif;
+    font-size: 18px;
+}
+
+.title-bold {
+    font-family: 'Hind-Bold', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.text-basic {
+    font-family: Nunito, sans-serif;
+    font-size: 12px;
+}
+
+.text-bold {
+    font-family: "Nunito-Bold", sans-serif;
+    font-weight: bold;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.mx-auto {
+    margin: 0 auto;
+}
+
+.bg-red {
+    background-color: #D33F49;
+}
+
+.bg-radio-red {
+    outline: 1px solid #D33F49;
+}

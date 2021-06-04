@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../exam2step_2/my_style.css" />
+    <title>Document</title>
+</head>
+<body>
+<h2 class="title text-center">Formulaire D'inscription</h2>
+ <div class="formulaire">
+<form method="POST" action="inscription.php" id="registre">
+    <h3 class="title-bold">Mes Informations</h3>
+    <div id="civilite">
+        <label class="text-basic" for="select">Civilité</label>
+        <select size="1" required name="civilite" id="select">
+            <option value="M.">M.</option>
+            <option value="Mme">Mme</option>
+        </select>
+    </div>
+
+
+    <div id="name-field">
+        <label class="text-basic"  for="name">Nom</label>
+        <input type="text" name="name" id="name">
+    </div>
+    <div class="error text-basic" id="error-name"></div>
+    <div class="error text-basic" id="error-name-length"></div>
+
+    <div id="radio">
+        <div class="radio__btn">
+            <input type="radio" id="homme" name="sexe" value="homme">
+            <label class="text-basic" for="homme">Homme</label>
+        </div>
+        <div class="radio__btn">
+            <input type="radio" id="femme" name="sexe" value="femme">
+            <label class="text-basic" for="femme">Femme</label>
+        </div>
+        <div class="radio__btn">
+            <input type="radio" id="other" name="sexe" value="autre">
+            <label class="text-basic" for="other">Autres</label>
+        </div>
+    </div>
+    <div class="text-basic error" id="error-radio"></div>
+
+     <div id="email-field">
+        <label class="text-basic" for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+    </div>
+    <div class="error text-basic" id="error-email"></div>
+
+    <div id="phone-field">
+        <label class="text-basic" for="phone">Téléphone</label>
+        <input type="tel" name="phone" id="phone">
+    </div>
+    <div class="error text-basic" id="error-phone"></div>
+
+    <div id="url-field">
+        <label class="text-basic" for="url">Site Web</label>
+        <input type="url" id="url" name="url">
+    </div>
+    <div class="error text-basic" id="error-url"></div>
+
+    <div id="birthday-field">
+        <label class="text-basic" for="birthday">
+            Date De Naissance
+        </label>
+        <input type="date" max="2007-01-01" id="birthday" name="birthday">
+    </div>
+    <div class="error text-basic" id="error-birthday"></div>
+    <h3 class="title-bold">Mot de passe</h3>
+    <div id="password-field">
+        <label class="text-basic" for="password">
+            Mot de passe
+        </label>
+        <input type="password" id="password" name="password">
+    </div>
+    <div class="error text-basic" id="error-password"></div>
+
+    <div id="password-field">
+        <label class="text-basic" for="password-confirm">
+            Confirmer le Mot de passe
+        </label>
+        <input type="password" id="password-confirm" name="password-confirm">
+    </div>
+    <div class="error text-basic" id="error-password-confirm"></div>
+    <button type="button" class="mx-auto" id="toggle-password">Voir les mots de passe</button>
+    <h3 class="title-bold">Mes Hobbies</h3>
+    <div id="hobbies-field">
+        <div class="group">
+            <input type="checkbox" id="videogame" name="videogame" value="game">
+            <label class="radio-label text-basic" for="videogame">Jeux Video</label>
+        </div>
+        <div class="group">
+            <input type="checkbox" id="movies" name="movies" value="movies">
+            <label class="radio-label text-basic" for="movies">Cinema</label>
+        </div>
+        <div class="group">
+            <input type="checkbox" id="reading" name="reading" value="reading">
+            <label class="radio-label text-basic" for="reading">Lecture</label>
+        </div>
+        <div class="group">
+            <input type="checkbox" id="sport" name="sport" value="sport">
+            <label class="radio-label text-basic" for="sport">Sport</label>
+        </div>
+        <div class="group">
+            <input type="checkbox" id="computer-science" name="computer-science" value="computer-science">
+            <label class="radio-label text-basic" for="computer-science">Informatique</label>
+        </div>
+    </div>
+    <div class="error text-basic" id="error-hobbies"></div>
+
+    <div>
+        <input type="hidden" name="token" value="my first website">
+    </div>
+
+    <button id="btn-submit" class="text-bold">
+        Soumettre le formulaire
+    </button>
+    <div id="loading-message"></div>
+</form>
+</div>
+<script src="../exam2step_3/my_script.js"></script>
+</body>
+</html>
